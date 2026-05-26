@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agro Forte | Futuro Sustentável</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f7f2;
+      color:#2c3e2f;
+      line-height:1.6;
+    }
+
+    header{
+      height:100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    nav{
+      position:fixed;
+      width:100%;
+      top:0;
+      left:0;
+      background:rgba(20, 55, 20, 0.92);
+      padding:18px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+    }
+
+    nav h1{
+      color:#9be15d;
+      font-size:1.8rem;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:25px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:#9be15d;
+    }
+
+    .hero h2{
+      font-size:4rem;
+      margin-bottom:20px;
+      text-transform:uppercase;
+    }
+
+    .hero p{
+      max-width:700px;
+      font-size:1.2rem;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#6ab04c;
+      color:white;
+      text-decoration:none;
+      border-radius:40px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#4e8c35;
+      transform:translateY(-3px);
+    }
+
+    section{
+      padding:90px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h3{
+      font-size:2.5rem;
+      color:#2f5e2f;
+      margin-bottom:10px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      padding:30px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card h4{
+      color:#3d7a3d;
+      margin-bottom:15px;
+      font-size:1.4rem;
+    }
+
+    .banner{
+      background:
+        linear-gradient(rgba(34, 85, 34, 0.82), rgba(34, 85, 34, 0.82)),
+        url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1600&q=80');
+      background-size:cover;
+      background-position:center;
+      color:white;
+      text-align:center;
+      padding:100px 20px;
+    }
+
+    .banner h3{
+      font-size:3rem;
+      margin-bottom:20px;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:25px;
+      margin-top:50px;
+    }
+
+    .stat{
+      background:white;
+      padding:35px;
+      border-radius:15px;
+      text-align:center;
+      color:#2f5e2f;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .stat h2{
+      font-size:2.5rem;
+      color:#4e8c35;
+    }
+
+    footer{
+      background:#163116;
+      color:white;
+      text-align:center;
+      padding:35px 20px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h2{
+        font-size:2.5rem;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h1>AGRO FORTE</h1>
+
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sustentabilidade</a></li>
+      <li><a href="#">Tecnologia</a></li>
+      <li><a href="#">Produção</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <h2>Futuro Sustentável</h2>
+
+      <p>
+        Equilíbrio entre produção agrícola, inovação tecnológica e preservação ambiental.
+        O agro do futuro é forte, consciente e sustentável.
+      </p>
+
+      <a href="#" class="btn">Conheça o Projeto</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-title">
+      <h3>Nosso Compromisso</h3>
+
+      <p>
+        Produzir alimentos de qualidade respeitando o meio ambiente e valorizando o campo.
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h4>🌱 Agricultura Sustentável</h4>
+
+        <p>
+          Técnicas modernas que preservam o solo, reduzem desperdícios e aumentam a eficiência produtiva.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>💧 Gestão Inteligente da Água</h4>
+
+        <p>
+          Uso consciente dos recursos hídricos com sistemas de irrigação inteligentes e reaproveitamento.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>🚜 Tecnologia no Campo</h4>
+
+        <p>
+          Automação, drones e monitoramento digital auxiliando produtores a gerar mais com menos impacto.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>🌎 Preservação Ambiental</h4>
+
+        <p>
+          Recuperação de áreas verdes e incentivo à biodiversidade para garantir equilíbrio ecológico.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="banner">
+
+    <h3>Produzir Hoje Pensando no Amanhã</h3>
+
+    <p>
+      O desenvolvimento sustentável no agro garante alimento, renda e preservação ambiental para as futuras gerações.
+    </p>
+
+  </section>
+
+  <section>
+
+    <div class="section-title">
+      <h3>Impactos Positivos</h3>
+    </div>
+
+    <div class="stats">
+
+      <div class="stat">
+        <h2>+45%</h2>
+        <p>Eficiência produtiva</p>
+      </div>
+
+      <div class="stat">
+        <h2>-30%</h2>
+        <p>Redução no desperdício de água</p>
+      </div>
+
+      <div class="stat">
+        <h2>100%</h2>
+        <p>Compromisso ambiental</p>
+      </div>
+
+      <div class="stat">
+        <h2>+20 mil</h2>
+        <p>Hectares preservados</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>
+      © 2026 Agro Forte — Futuro Sustentável | Equilíbrio entre produção e meio ambiente
+    </p>
+  </footer>
+
+</body>
+</html>
